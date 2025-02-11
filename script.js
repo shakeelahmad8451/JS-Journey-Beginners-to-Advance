@@ -36,6 +36,9 @@ var a;       // ❌ SyntaxError: Redeclaration of 'a' using var is not allowed!
  */
 
 
+
+
+/* 
 let a =55;
 function am(){
     var a = 66;
@@ -46,5 +49,13 @@ console.log('Outside the function body a is : ',a);
 
 // Now this is completely fine as functions has their own scope.
 // So does this mean that here var a = 66 ; is not hoisted ? 
+// it is hoisted but in the local storage of the function
+// that means we have three scopes 
+// 1. Local 2.Global 3.Block
+// Local is function scope
+// Global is availaible anywhere in the program
+// Block is availaible only in that particular block 
+ 
+*/
 
 
