@@ -6,3 +6,7 @@ i.e : document.getElementbyId('display').value;
 eval();
 This function is used to evaluate any mathematical expression given to it.
 
+
+ISSUES : 
+    CSS is not handled properly.
+    Too many code redundnacy in the js code.
