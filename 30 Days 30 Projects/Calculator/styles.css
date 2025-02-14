@@ -1,0 +1,127 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background: #A0D7FF;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.circle{
+    background-color: #109DFF;
+    height: 474px;
+    width: 474px;
+    border-radius: 50%;
+    position: absolute;
+    top: 150px;
+    right: 200px;
+}
+.smallcircle{
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background-color: #109DFF;
+    border-radius: 50%;
+}
+
+.one{
+    top: 90px;
+    right: 20px;
+
+}
+
+
+.second{
+    bottom: 90px;
+    left: 20px;
+}
+
+.third{
+    bottom: 250px;
+    left: 120px;
+}
+
+.intro{
+    position: absolute;
+    font-size: larger;
+    font-weight: bolder;
+    left: 60px;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 50px 30px;
+    border-radius: 10px;
+}
+.heading{
+    font-size: 40px;
+    font-weight: bolder;
+    background-color: #109DFF;
+    display: inline-block;
+    padding: 5px 40px;
+    border-radius: 50px;
+}
+
+
+.calculator{
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 300px;
+    height: 500px;
+    border-radius: 10px;
+    z-index: 50;
+}
+
+.calculator form{
+    display: flex    ;
+    flex-direction: column;
+    gap: 10px;
+}
+.display{
+    height: 125px;
+
+}
+div .display input{
+    height: inherit;
+    width: 100%;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.3);
+    padding-right: 20px;
+    font-size: 50px;
+    text-align: right;
+}
+.buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.buttons input:not(.equal){
+    height: 50px;
+    width: 50px;
+    border: none;
+    margin: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: #109DFF;
+    font-weight: bold;
+}
+.buttons input:not(.equal):hover{
+    background-color: #A0D7FF;
+    transition: all 0.2s ease-in;
+}
+.equal{
+    width: 80px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #A0D7FF;
+    border: none;
+    cursor: pointer;
+}
+
+.equal:hover{
+    background-color: #109DFF;
+    transition: all 0.2s ease-in;
+
+}

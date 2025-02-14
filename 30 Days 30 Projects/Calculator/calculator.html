@@ -1,0 +1,65 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="circle"></div>
+        <div class="smallcircle one"></div>
+        <div class="smallcircle second"></div>
+        <div class="smallcircle third"></div>
+        <div class="intro">
+            <div class="heading"> App Design</div>
+            <p>Calculator App Using HTML CSS and JavaScript</p>
+        </div>
+
+
+        <div class="calculator">
+            <form action="">
+                <div class="display">
+                    <input id="display" type="text" name="display" value="">
+                </div>
+                <div class="buttons">
+
+                    <div>
+                        <input type="button" value="AC" onclick="handleClick(event)">
+                        <input type="button" value="DE" onclick="handleClick(event)">
+                        <input type="button" value="." onclick="handleClick(event)">
+                        <input type="button" value="/" onclick="handleClick(event)">
+                    </div>
+                    <div>
+                        <input type="button" value="7" onclick="handleClick(event)">
+                        <input type="button" value="8" onclick="handleClick(event)">
+                        <input type="button" value="9" onclick="handleClick(event)">
+                        <input type="button" value="*" onclick="handleClick(event)">
+                    </div>
+                    <div>
+                        <input type="button" value="4" onclick="handleClick(event)">
+                        <input type="button" value="5" onclick="handleClick(event)">
+                        <input type="button" value="6" onclick="handleClick(event)">
+                        <input type="button" value="-" onclick="handleClick(event)">
+                    </div>
+                    <div>
+                        <input type="button" value="1" onclick="handleClick(event)">
+                        <input type="button" value="2" onclick="handleClick(event)">
+                        <input type="button" value="3" onclick="handleClick(event)">
+                        <input type="button" value="+" onclick="handleClick(event)">
+                    </div>
+                    <div>
+                        <input type="button" value="00" onclick="handleClick(event)">
+                        <input type="button" value="0" onclick="handleClick(event)">
+                        <input type="button" value="=" class="equal" onclick="handleClick(event)">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="./script.js"></script>
+
+</html>
