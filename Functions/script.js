@@ -66,3 +66,11 @@ console.log(firstClass1()); // will return a functions
 
 
 
+/*  Interview Questions
+
+Q1 : 
+
+
+
+*/
+
