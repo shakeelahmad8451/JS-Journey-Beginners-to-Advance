@@ -1,0 +1,71 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/fontawesome.min.css" integrity="sha512-v8QQ0YQ3H4K6Ic3PJkym91KoeNT5S3PnDKvqnwqFD1oiqIl653crGZplPdU5KKtHjO0QKcQ2aUlQZYjHczkmGw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Your List of Tasks</title>
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="dp">
+            <img src="#" alt="">
+            <p class="username">Alice Border</p>
+        </div>
+<!--         <div class="timeline">
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+                <li>8</li>
+                <li>9</li>
+                <li>10</li>
+                <li>11</li>
+                <li>12</li>
+            </ul>
+            <ul>
+                <li>AM</li>
+                <li>PM</li>
+            </ul>
+        </div> -->
+        <div class="taskcontainer" id="taskcontainer">
+            <div class="task">
+                <p class="time">8 PM</p>
+                <input type="text" id="task" ></input>
+                <i>X</i>
+            </div>
+        </div>
+        <nav>
+            <i>
+                user icon
+            </i>
+            <i>
+                Jobs
+            </i>
+            <i>
+                notifications
+            </i>
+            <i>
+                account
+            </i>
+            <i class="addTask" onclick="popUpBlock()">
+                + 
+            </i>
+        </nav>
+        
+        <div class="popaddnewtask" id="popaddnewtask">
+            <input type="text" name="" id="taskText" required oninput="handleChange(event)" >
+            <button onclick="addTask()">Add Task</button>
+        </div>
+        
+    </div>
+    <div class="overlay" id="overlay"></div>
+
+    
+</body>
+<script src="./script.js"></script>
+</html>

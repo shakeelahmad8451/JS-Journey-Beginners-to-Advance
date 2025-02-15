@@ -1,0 +1,166 @@
+
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.dp{
+    height: 10%;
+    width: 100%;
+    background-color: bisque;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 10px;
+}
+
+.dp img{
+    height: 80px;
+    width: 80px;
+    background-color: rgb(16, 12, 12);
+    border-radius: 50%;
+    border: none;
+}
+.dp .username{
+    padding-bottom: 17px;
+    align-self: end;
+    font-size: xx-large;
+}
+
+.taskcontainer{
+    height: 75px;
+    margin-top: 30px;
+    margin-bottom: 15px;  
+}
+.task{
+    position: relative;
+    margin-inline: 10%;
+    margin-bottom: 10px;
+    height: 100%;
+    background-color: bisque;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.task .time{
+    font-size: large;
+    font-weight: bold;
+    padding: 5px;
+    left: 5px;
+    position: absolute;
+    top: 0;
+}
+.task input{
+    font-weight: bold;
+    font-size: x-large;
+    height: 80%;
+    width: 75%;
+    background-color: transparent;
+    border: none;
+}
+.task::before{
+    display: inline-block;
+    content: url('https://www.google.com/imgres?q=url%20of%20circle%20icon&imgurl=https%3A%2F%2Fthumbs.dreamstime.com%2Fb%2Farrow-earth-grid-globe-internernet-concept-click-website-idea-using-icon-circle-round-black-color-vector-illustration-flat-144979851.jpg&imgrefurl=https%3A%2F%2Fwww.dreamstime.com%2Fillustration%2Fwebsite-icon-round.html&docid=jINBp3GQkNQtYM&tbnid=fI-zMUKyFbuZtM&vet=12ahUKEwjs__Di18SLAxVphf0HHYI6NKoQM3oECGcQAA..i&w=800&h=800&hcb=2&ved=2ahUKEwjs__Di18SLAxVphf0HHYI6NKoQM3oECGcQAA');
+}
+
+
+.timeline ul{
+    list-style: none;
+    display: flex;
+    gap: 5px;
+    scroll-behavior: smooth;
+    font-size: larger;
+    font-weight: bold;
+}
+.timeline ul>li{
+    height: 40px;
+    width: 40px;
+    background-color: thistle;
+    border-radius: 50%;
+    align-self: center;
+}
+
+nav{
+    font-size: x-large;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: blanchedalmond;
+    height: 10%;
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+}
+.addTask{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    font-size: xx-large;
+    font-weight: bold;
+    height: 50px;
+    width: 50px;
+    background-color: rgb(121, 5, 5);
+    border-radius: 50%;
+    top: -25px;
+    cursor: pointer;
+}
+
+.popaddnewtask{
+    display: none;
+    padding-block: 30px;
+    border: 2px solid black;
+    margin-inline: 50px;
+    background-color: antiquewhite;
+    gap: 20px;
+    flex-direction: column;
+    border-radius: 10px;
+}
+.display{
+    display: flex;
+    z-index: 30;
+}
+.overlay{
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    backdrop-filter: blur(5px); /* Blur effect */
+    z-index: 10;
+}
+.overlay-visible{
+    display: block;
+}
+.popaddnewtask{
+    position: relative;
+    z-index: 100;
+}
+.popaddnewtask input{
+    align-self: center;
+    width: 70%;
+    height: 100px;
+    background-color: transparent;
+    border: 3px solid black;
+    border-radius: 5px;
+}
+
+.popaddnewtask button{
+    align-self: center;
+    text-align: center;
+    padding: 20px 30px;
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+}
