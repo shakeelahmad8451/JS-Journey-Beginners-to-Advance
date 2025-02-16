@@ -40,7 +40,7 @@ function addTask(){
 
         // Now we need to get the text what the user have enetered in the input field
         // and put it inside the input tag
-        input.innerText=inputTag.value;
+        input.value=inputTag.value;
         console.log(input.innerText)
         // and set the input value to null or empty string
         inputTag.value='';
@@ -58,6 +58,7 @@ function addTask(){
         // now add classes accordingly to div and other
         div.classList.add('task');
         p.classList.add('time');
+        input.readOnly= true;
 
        // now put this div we have made till now into the taskcontainer
        taskContainer.appendChild(div); 
@@ -71,7 +72,22 @@ function addTask(){
        const popUpDiv = document.getElementById('popaddnewtask');
        popUpDiv.classList.remove('display');
 
+    
+       // remove the task 
+       i.addEventListener('click',()=>{
+        taskContainer.removeChild(div);
+        console.log('child removed')
+       })
 
+       // Toggle bw state of task if already completed then remove else addd
+       input.addEventListener('click',()=>{
+        if(input.classList[0]==='completed'){
+            input.classList.remove('completed');
+            return
+        }
+        input.classList.add('completed');
+        
+       })
 
 
 

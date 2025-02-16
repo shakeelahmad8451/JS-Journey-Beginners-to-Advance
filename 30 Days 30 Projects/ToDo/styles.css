@@ -49,6 +49,9 @@
     align-items: center;
     justify-content: space-around;
 }
+.completed{
+    text-decoration: line-through;
+}
 .task .time{
     font-size: large;
     font-weight: bold;
