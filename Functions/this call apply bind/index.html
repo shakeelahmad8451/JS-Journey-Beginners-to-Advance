@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>This Keyword</h2>
+    <p>
+        This is a keyword in js and has different value at different places.
+        <ul>
+            <li>'this' in global scope points to the 'Global Object' i.e in Chrome it points to 'window'</li>
+            <li>'this' in the function points to UNDEFINED in strict mode.</li>
+            <li>'this' in function points to 'Gloab Object' in NON-STRICT MODE because of 'this subsitution' (if this is pointing to undefined or null it will automatically points this to global object)</li>
+            <li>'this' in method points to the object it is called with.</li>
+            <li>'this' in  arrow functions points to its parents lexical environment.</li>
+            <li>'this' in the DOM points to the element it is used with.</li>            
+            
+        </ul>
+    </p>
+
+    <h2>Call Apply and Bind</h2>
+    <p>They are all used to change the reference of 'this' keyword.</p>
+    
+</body>
+<script src="./this.js"></script>
+<script src="./callapplybind.js"></script>
+</html>
